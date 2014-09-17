@@ -1,0 +1,20 @@
+{
+    "name": "jgdevelopment-phpbrew",
+    "version": "0.1.0",
+    "author": "Jan Gantzert",
+    "license": "GNU General Public License",
+    "summary": "This is a puppet module for phpbrew",
+    "source": "https://github.com/jg-development/puppet-phpbrew",
+    "project_page": "(https://github.com/jg-development/puppet-phpbrew)",
+    "issues_url": "https://github.com/jg-development/puppet-phpbrew/issues",
+    "tags": ["puppet", "phpbrew"],
+    "operatingsystem_support": [
+        {
+            "operatingsystem": "Ubuntu",
+            "operatingsystemrelease": [ "14.04" ]
+        }
+    ]
+    "dependencies": [
+        { "name": "puppetlabs/stdlib", "version_requirement": ">=3.2.0 <5.0.0" }
+    ]
+}
