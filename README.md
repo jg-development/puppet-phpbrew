@@ -2,12 +2,16 @@
 
 This is a puppet module for phpbrew
 
+Dependencies
+------------
+
+To run `puppet-module`, you must have the following installed:
+
+* Puppet stdlib > 3.2.0 https://github.com/puppetlabs/puppetlabs-stdlib
+
 a more complex example
------
+------------
 ```ruby
-  class {'phpbrew':
-    user => 'vagrant'
-  }
   phpbrew::php { '5.3.29': }
   phpbrew::inisettings {
     'memory_limit':
@@ -92,7 +96,7 @@ a more complex example
       entry => 'www/listen.mode',
       value => '0777';
   }
-```ruby
+```
 
 ## License
 
