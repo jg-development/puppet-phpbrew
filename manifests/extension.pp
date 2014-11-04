@@ -57,7 +57,7 @@ define phpbrew::extension (
   }
 
   exec { "phpbrew_switch_php_${version}_${$extension_name}":
-    command => "bash -c 'source ${$home_dir}/.phpbrew/bashrc && phpbrew use ${version} && phpbrew ext install ${$extension_name} stable -- ${$extra_params} && phpbrew ext enable ${$extension_name}'",
+    command => "bash -c 'source ${$home_dir}/.phpbrew/bashrc && phpbrew use php-${version} && phpbrew ext install ${$extension_name} stable -- ${$extra_params} && phpbrew ext enable ${$extension_name}'",
     user => $user,
     environment => [
       "HOME=${$home_dir}",
